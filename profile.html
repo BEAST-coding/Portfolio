@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title> My Profile</title>
+    <link rel="stylesheet" href="profile.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Luckiest+Guy&display=swap" rel="stylesheet">
+    <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+</head>
+
+<body>
+    <header class="head">
+        <section>
+            <div class="sign">
+                <h1>
+                    <a href="./index2.html">
+                        <marquee behavior="alternate">Anish</marquee>
+                    </a>
+                </h1>
+            </div>
+            <div class="topmenu">
+                <nav>
+                    <a href="#aboutme" class="topmenulink">ABOUT ME</a>
+                    <a href="#contact" class="topmenulink">CONTACT ME</a>
+                    <a href="./profile.html" target=# class="topmenulink">PROFILE</a>
+                </nav>
+            </div>
+        </section>
+    </header>
+    <div class="Wrapper">
+        <div class="first-disp">
+            <h1>About <br>me🙂</h1>
+            <p>Passionate computer science student adept at merging technical expertise with creative design.</p>
+        </div>
+
+        <div class="Education">
+            <h2 class="fade-in">Education</h2>
+            <div class="education-info-row-1 fade-in">
+                <h2 style="padding: 0px 7.3vh 0px; margin:0px 0px 0px">2020</h2>
+                <div class="column2">
+                    <h3>Secondary Education</h3>
+                    <p>Completed my Secondary Education from D.S.B International
+                        public school,<br>Rishikesh, Uttarakhand</p>
+                </div>
+            </div>
+            <div class="education-info-row-2 fade-in">
+                <h2 style="padding: 0px 7.3vh 0px; margin:0px 0px 0px">2022</h2>
+                <div class="column2">
+                    <h3>Senior-Secondary Education</h3>
+                    <p>Completed my Senior-Secondary Education from D.S.B International
+                        public school,<br>Rishikesh, Uttarakhand</p>
+                </div>
+            </div>
+            <div class="education-info-row-3 fade-in">
+                <h2 style="padding: 0px 7.3vh 0px; margin:0px 0px 0px">2023</h2>
+                <div class="column2">
+                    <h3>Bachelors of Technology in Computer Science Engineering</h3>
+                    <p>Currently pursuing Bachelors of technology Degree in Computer science Engineering<br>
+                        from University of Petroleum and Energy studies, Dehradun, Uttarakhand</p>
+                </div>
+            </div>
+        </div>
+
+    </div>
+    <div class="skills fade-in">
+        <div class="header">
+            <h2>Skills</h2>
+        </div>
+        <div class="skills-container">
+            <div class="skill-box">
+                <div class="skill-title">
+                    <div class="img">
+                        <img src="./HTML5_logo_and_wordmark.svg.png" class="skill-icon">
+                    </div>
+                    <h3>HTML 5</h3>
+                </div>
+
+            </div>
+            <div class="skill-box">
+                <div class="skill-title">
+                    <div class="img">
+                        <img src="./css-logo.png" class="skill-icon">
+                    </div>
+                    <h3>CSS 3</h3>
+                </div>
+
+            </div>
+            <div class="skill-box">
+                <div class="skill-title">
+                    <div class="img">
+                        <img src="./C_Logo.png" class="skill-icon">
+                    </div>
+                    <h3>C Programming</h3>
+                </div>
+
+            </div>
+            <div class="skill-box">
+                <div class="skill-title">
+                    <div class="img">
+                        <img src="./python.png" class="skill-icon">
+                    </div>
+                    <h3>Python</h3>
+                </div>
+
+            </div>
+            <div class="skill-box">
+                <div class="skill-title">
+                    <div class="img">
+                        <img src="./figma.png" class="skill-icon">
+                    </div>
+                    <h3>Figma</h3>
+                </div>
+
+            </div>
+            <div class="skill-box">
+                <div class="skill-title">
+                    <div class="img">
+                        <img src="./photoshop.png" class="skill-icon">
+                    </div>
+                    <h3>Photoshop</h3>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="Wrapper">
+        <section class="fade-in">
+            <div class="header2">
+                <h2>Projects</h2>
+            </div>
+            <div class="project-container">
+                <div class="item" id="1">
+                    <img class="projects"
+                        src="./depiction.jpg"
+                        alt="">
+                    <div class="text">
+                        <h3>Invoice Generator</h4>
+                            <p>Invoice Generator helps you create invoices in an instant. Enter the billing information and make invoices that you can print</p>
+                    </div>
+                </div>
+
+                <div class="item" id="2">
+                    <img class="projects"
+                        src="./taxcalculator.png"
+                        alt="">
+                    <div class="text">
+                        <h3>Tax Calculator</h4>
+                            <p>tax calculator is an easy-to-use tool which provides you with an estimation of the taxable income and tax payable</p>
+                    </div>
+                </div>
+
+                <div class="item" id="3">
+                    <img class="projects"
+                        src="./tally to whatsapp.png"
+                        alt="">
+                    <div class="text">
+                        <h3>Tally to Whatsapp</h4>
+                            <p></p>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </div>
+    </section>
+    </div>
+
+    </div>
+    <script>
+        $(document).ready(function () {
+            $(window).scroll(function () {
+                var windowHeight = $(window).height();
+                var scrollPos = $(window).scrollTop() + windowHeight / 2;
+
+                $(".fade-in").each(function () {
+                    var offsetTop = $(this).offset().top;
+
+                    if (scrollPos > offsetTop && scrollPos < offsetTop + $(this).height()) {
+                        $(this).addClass("center");
+                    } else {
+                        $(this).removeClass("center");
+                    }
+                });
+            });
+        });
+    </script>
+</body>
+
+</html>

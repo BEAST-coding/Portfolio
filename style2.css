@@ -1,0 +1,205 @@
+html {
+    scroll-behavior: smooth;
+    overflow-x: hidden;
+    transition:all;
+    transition-duration: 2s;
+}
+a{
+    color: #b536ff;
+}
+.bg-intro{
+    background-image: url("./IMG_20230917_114700.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height:330px;
+    display: flex;
+    flex-direction: column;
+    color:white;
+}
+.bg-intro:before{
+        position:absolute;
+        content: " ";
+        top:0;
+        left:0;
+        z-index: -1;
+        background:rgba(31, 44, 108, 0.533);
+        width:100%;
+        height:745px;
+}
+
+.topmenu{
+    margin-top:-12vh;
+    float: right;
+    font-size: 3vh;
+    display: block;
+    text-align: right;
+    margin-right: 2vh;
+}
+
+.topmenulink{
+    display: inline-block;
+    text-align: right;
+    margin-right: 70px;
+    color:whitesmoke;
+    text-decoration: none;
+    font-size: 14pt;
+    font-family: sans-serif;
+    text-shadow: black 1px 0 7px;
+    transition: all;
+    transition-duration: 200ms;
+}
+nav a:hover{
+    color: #327faf;
+    text-shadow: black 1px 0 3px;
+}
+
+.sign{
+    font-family: 'Luckiest Guy', cursive;
+    margin-top: -2vh;
+    margin-left: 8vh;
+    font-size: 4vh;
+    color: #b636ff;
+    width:20%;
+}
+
+.main-content{
+    font-family: 'Poppins', sans-serif;
+    margin-left: 8vh;
+    margin-top: 15vh;
+    display: block;
+    width:80vh;
+    float: left;
+    
+}
+
+.main-content h1{
+    font-family: 'Poppins', sans-serif;
+    font-size: 7vh;
+    color: rgb(255, 255, 255);
+    animation: fade-in 1s forwards ease-in;
+}
+@keyframes fade-in{
+    from{opacity:0;}
+    to{opacity:1;}
+}
+
+.main-content h2{
+    margin-top: -5vh;
+    font-size: 5.5vh;
+    color: #b636ff;
+    animation: fade-in 1s forwards ease-in;
+}
+.main-content h3{
+    font-weight: 500;
+    word-spacing: 2px;
+    animation: fade-in 1.5s forwards ease-in;
+}
+.head{
+    margin-top: -2vh;
+    margin-left: -2vh;
+    background-color:#000000d1;
+    width: 100vw;
+    height: 13vh;
+}
+
+.dropbtn {
+    background-color: whitesmoke;
+    opacity: 80%;
+    color:#b636ff;
+    padding: 15px;
+    /* margin-top: 150px; */
+    font-size: 20px;
+    border: none;
+    width: 10vw;
+    border-radius: 6px;
+    font-weight: bolder;
+    box-shadow: 1px 1px 1px 3px #b636ff ;
+    animation: fade-in 1.5s forwards ease-in;
+  }
+  
+.dropdown {
+    margin-top: 44vh;
+    margin-left: -38vw;
+    position: relative;
+    top:150px;
+    z-index: 1;
+    display: inline-block;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  }
+
+.dropdown-content {
+    border-radius: 10px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    display: none;
+    position: absolute;
+    background-color:whitesmoke;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    height: 60px;
+    overflow: auto;
+}
+
+.dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+  }
+.dropdown-content a::-webkit-scrollbar{
+    background-color: #ddd;
+}
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+.about {
+    padding: 50px 0 100px;
+}
+.about-content {
+    padding-top: 80px;
+}
+.single-about-txt h3 {
+    font-family:'Poppins',sans-serif;
+    font-size:18px;
+    color: #3c4258;
+    text-transform: initial;
+    line-height: 1.8;
+}
+.single-about-txt p {
+
+    font-size: 16px;
+    color: #999fb3;
+    padding: 35px 0 43px;
+    border-bottom: 1px solid #999fb3;
+}
+.single-about-add-info {
+    margin: 35px 0;
+}
+.single-about-add-info h3 {
+    color: #636a82;
+    font-size: 18px;
+    text-transform: capitalize;
+}
+.single-about-add-info p {
+    font-weight:  300;
+    border:  0;
+    padding: 0;
+    margin-top: 3px;
+}
+.container{
+    display:flex;
+    /* margin-top: 120px; */
+    height:1000px;
+    width:100%;
+    top: 200px;
+    background-color:rgb(255, 255, 255);
+    padding-left: 10vh;
+    position:relative;
+}
+h2{
+    color:#3c4258;
+    font-family: 'Poppins',sans-serif;
+    margin-top: -30px;
+    font-size: 30pt;
+    font-weight: bold;
+}
